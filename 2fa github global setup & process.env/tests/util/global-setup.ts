@@ -1,6 +1,6 @@
 import { chromium, expect } from "@playwright/test";
 import * as OTPAuth from "otpauth";
-import 'dotenv/config';
+
 
 let totp = new OTPAuth.TOTP({
   issuer: "GitHub",
