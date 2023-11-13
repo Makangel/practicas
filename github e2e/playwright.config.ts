@@ -2,7 +2,6 @@ import { defineConfig, devices } from '@playwright/test';
 require('dotenv').config();
 
 export default defineConfig({
-  globalSetup: './tests/util/global-setup.ts',
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
@@ -10,15 +9,23 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    storageState:'./tests/util/storage-state.json',
   
     trace: 'on-first-retry',
   },
 
   projects: [
     {
+      name: "setup",
+      testDir: "./tests/global-setup",
+      testMatch: "global-setup.ts"
+    },
+    {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      dependencies: ["setup"],
+      use: { ...devices['Desktop Chrome'],
+      storageState:'./tests/global-setup/storage-state.json',
+    },
+      
     },
 
   ],

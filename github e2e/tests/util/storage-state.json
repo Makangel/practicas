@@ -1,0 +1,145 @@
+{
+  "cookies": [
+    {
+      "name": "_octo",
+      "value": "GH1.1.326630001.1699889507",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": 1731511918.599391,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "preferred_color_mode",
+      "value": "light",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "tz",
+      "value": "America%2FBuenos_Aires",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_device_id",
+      "value": "8cd7ddc98007beaec186fbe68b4a00cb",
+      "domain": "github.com",
+      "path": "/",
+      "expires": 1731511911.066777,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "has_recent_activity",
+      "value": "1",
+      "domain": "github.com",
+      "path": "/",
+      "expires": 1699893111.545066,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "saved_user_sessions",
+      "value": "81980439%3AgisM7Yn23tff-jceZNJpn0wkOTugPaf6ufY9HYCmM-CFFpgT",
+      "domain": "github.com",
+      "path": "/",
+      "expires": 1707665512.007211,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "user_session",
+      "value": "gisM7Yn23tff-jceZNJpn0wkOTugPaf6ufY9HYCmM-CFFpgT",
+      "domain": "github.com",
+      "path": "/",
+      "expires": 1701099112.007419,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__Host-user_session_same_site",
+      "value": "gisM7Yn23tff-jceZNJpn0wkOTugPaf6ufY9HYCmM-CFFpgT",
+      "domain": "github.com",
+      "path": "/",
+      "expires": 1701099112.007489,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Strict"
+    },
+    {
+      "name": "tz",
+      "value": "America%2FBuenos_Aires",
+      "domain": "github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "color_mode",
+      "value": "%7B%22color_mode%22%3A%22auto%22%2C%22light_theme%22%3A%7B%22name%22%3A%22light%22%2C%22color_mode%22%3A%22light%22%7D%2C%22dark_theme%22%3A%7B%22name%22%3A%22dark%22%2C%22color_mode%22%3A%22dark%22%7D%7D",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "logged_in",
+      "value": "yes",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": 1731511912.007671,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "dotcom_user",
+      "value": "Makangel",
+      "domain": ".github.com",
+      "path": "/",
+      "expires": 1731511912.007737,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "_gh_sess",
+      "value": "LMQGe5nn0tIHPy0expWwd%2FtMH4VWczHMu%2Bb%2BZNCGk%2Fsefd0EBq7AKQafdHUrHhV%2FrgbqTuXAF4xDvs%2FcFOwIerGi3TwIhus1XlZnqaR2Y%2F%2BGC7Er7LmwI6vYx3wtcjxcokR%2B0qOLV47lh0wr%2B%2F3UgIhisCrrRIKhU3TVbwvkRj%2BsyV6MQ4xqv6a3skGdJYzhWa0g8hotNDx%2BpJ4KvDyASd7%2BPOh96cxfAtly5hPVlKy468XHXiyaCGXzKwubU2TuV9sEIzJX9bZIax%2FHYJuZdk3uYKWkqH5AIPY7%2BM5kSKKtvD%2BAGywwF2VtOx%2F%2FGuPRbpaakdSrlQKaStOiKMgYedyxBQ8Nbnwz5A32RXQRityyYWmdgL13LTGIUvbFG2vkW5N8peTjNy04pGchwbHFYcrJ7Gul8shnc0jI9mMbyRxOSpZ9Cudm%2FJDwUgfDTsWYteledXkoODLGeZOb6Zk7vkckB%2FC%2F9LACLKYzZiDP%2FfbJYEOvwNV%2Fh56%2B4BE%2FovUsGfZxMhfsKcqGiJgkvZyfGmTTIpAc9%2Fy39K%2F%2FQwxKgqroBarcascSPKFsWgGjPgDfIrudkz63tkyi8DU7MErdw%2BnLahCTZFR3OqbzZIyAw%2Bk%2B6B%2By1Kf2V%2BLOzlqbV%2BjMzj5Z0mlX9UnQqPUOgH0Y0dkFpcOok8%2Bl3eaQICKAK4TkA70Q716QvULTf1bPIWZgxfLO%2Fl%2BYq0Gz%2FEghQDs3abIzz33TByaY2zCbk920XjTtb2UkDNoHJmiGlKTl1FLiC95jnlJ3R8qQJimMTcxe5yhWyd%2FZarFRMWHCwl6oy%2F%2BGbs2gp%2Bv70vF8Nsh1rqv9URxrtYUj06g5LHgEYXrV7gQCIFUVuX2FbN7Q1%2FjLY7DzlQwuYDxJ%2FcYE4TYa%2BZvjHdDzVo2qap%2BKjAk0NcWAhXfYEk9BV1LJkCpeG7zw0OX3PpTyl8xWSbkTQIz9E0ojg5885G4DfpknW7qZgT568iIOrqmMfeErWOzee5G5UEIWRXg3EzndzQ%3D%3D--Eo4ZeTNHnS94GSap--4McefwI0QHDjjqqeunOaZw%3D%3D",
+      "domain": "github.com",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://github.com",
+      "localStorage": [
+        {
+          "name": "bundle-urls",
+          "value": "{\"wp-runtime.js\":\"https://github.githubassets.com/assets/wp-runtime-31f9bf2753df.js\",\"vendors-node_modules_dompurify_dist_purify_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_dompurify_dist_purify_js-6890e890956f.js\",\"vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-a4c183.js\":\"https://github.githubassets.com/assets/vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-a4c183-79f9611c275b.js\",\"ui_packages_soft-nav_soft-nav_ts.js\":\"https://github.githubassets.com/assets/ui_packages_soft-nav_soft-nav_ts-6a5fadd2ef71.js\",\"environment.js\":\"https://github.githubassets.com/assets/environment-569829d98e9a.js\",\"vendors-node_modules_github_selector-observer_dist_index_esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_selector-observer_dist_index_esm_js-9f960d9b217c.js\",\"vendors-node_modules_primer_behaviors_dist_esm_focus-zone_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_focus-zone_js-d9ce45da2851.js\",\"vendors-node_modules_github_relative-time-element_dist_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_relative-time-element_dist_index_js-c6fd49e3fd28.js\",\"vendors-node_modules_fzy_js_index_js-node_modules_github_combobox-nav_dist_index_js-node_modu-344bff.js\":\"https://github.githubassets.com/assets/vendors-node_modules_fzy_js_index_js-node_modules_github_combobox-nav_dist_index_js-node_modu-344bff-421f7a8c1008.js\",\"vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-29dc30.js\":\"https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_details-dialog-elemen-29dc30-a2a71f11a507.js\",\"vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-59c459.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_remote-inp-59c459-e74bf552c5b7.js\",\"vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-2c6968.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_file-attachment-element_dist_index_js-node_modules_primer_view-co-2c6968-3cbb53b1c985.js\",\"github-elements.js\":\"https://github.githubassets.com/assets/github-elements-ba6b32e5a9a8.js\",\"element-registry.js\":\"https://github.githubassets.com/assets/element-registry-1cabc2253887.js\",\"vendors-node_modules_github_catalyst_lib_index_js-node_modules_github_hydro-analytics-client_-978abc0.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_catalyst_lib_index_js-node_modules_github_hydro-analytics-client_-978abc0-15861e0630b6.js\",\"vendors-node_modules_lit-html_lit-html_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_lit-html_lit-html_js-5b376145beff.js\",\"vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_alive-client_dist-bf5aa2.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_mini-throttle_dist_index_js-node_modules_github_alive-client_dist-bf5aa2-1b562c29ab8e.js\",\"vendors-node_modules_morphdom_dist_morphdom-esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_morphdom_dist_morphdom-esm_js-5bff297a06de.js\",\"vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-ec51a0f6e881.js\",\"vendors-node_modules_color-convert_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_color-convert_index_js-72c9fbde5ad4.js\",\"vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_github_hotkey_dist_-8755d2.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_github_hotkey_dist_-8755d2-0ac4a16a6cca.js\",\"vendors-node_modules_github_session-resume_dist_index_js-node_modules_primer_behaviors_dist_e-ac74c6.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_session-resume_dist_index_js-node_modules_primer_behaviors_dist_e-ac74c6-637fd908cfc1.js\",\"vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_github_quote-select-854ff4.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_paste-markdown_dist_index_esm_js-node_modules_github_quote-select-854ff4-201063b8cc44.js\",\"ui_packages_details-dialog_details-dialog_ts-ui_packages_fetch-utils_fetch-utils_ts.js\":\"https://github.githubassets.com/assets/ui_packages_details-dialog_details-dialog_ts-ui_packages_fetch-utils_fetch-utils_ts-78f25ba16cd9.js\",\"app_assets_modules_github_updatable-content_ts-ui_packages_hydro-analytics_hydro-analytics_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_updatable-content_ts-ui_packages_hydro-analytics_hydro-analytics_ts-6ab1a34074c8.js\",\"app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_onfocus_ts-app_ass-079b43.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_task-list_ts-app_assets_modules_github_onfocus_ts-app_ass-079b43-84f860f8b7d6.js\",\"app_assets_modules_github_sticky-scroll-into-view_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_sticky-scroll-into-view_ts-f982282c5c39.js\",\"app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-2e2258.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_ajax-error_ts-app_assets_modules_github_behaviors_include-2e2258-178d980b559e.js\",\"app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_behaviors_commenting_edit_ts-app_assets_modules_github_behaviors_ht-83c235-b85e9f4f1304.js\",\"behaviors.js\":\"https://github.githubassets.com/assets/behaviors-d984747343bb.js\",\"vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-d0256ebff5cd.js\",\"notifications-global.js\":\"https://github.githubassets.com/assets/notifications-global-99d196517b1b.js\",\"vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-b4a243.js\":\"https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-b4a243-190649034187.js\",\"marketing.js\":\"https://github.githubassets.com/assets/marketing-edd23423e40f.js\",\"home.js\":\"https://github.githubassets.com/assets/home-050ba83c9dd7.js\",\"vendors-node_modules_github_webgl-globe_dist_js_main_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_webgl-globe_dist_js_main_js-cf5f119d1214.js\",\"webgl-globe.js\":\"https://github.githubassets.com/assets/webgl-globe-0e12b2efdc25.js\",\"vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-94fd67.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_remote-form_dist_index_js-node_modules_delegated-events_dist_inde-94fd67-99519581d0f8.js\",\"sessions.js\":\"https://github.githubassets.com/assets/sessions-76e28d5c9536.js\",\"light.css\":\"https://github.githubassets.com/assets/light-b92e9647318f.css\",\"dark.css\":\"https://github.githubassets.com/assets/dark-5d486a4ede8e.css\",\"primer-primitives.css\":\"https://github.githubassets.com/assets/primer-primitives-363ec1831c26.css\",\"primer.css\":\"https://github.githubassets.com/assets/primer-0cdc607a5517.css\",\"global.css\":\"https://github.githubassets.com/assets/global-b2298340fd5b.css\",\"github.css\":\"https://github.githubassets.com/assets/github-f2eafb2a55aa.css\",\"dashboard.css\":\"https://github.githubassets.com/assets/dashboard-5375b7c79036.css\",\"discussions.css\":\"https://github.githubassets.com/assets/discussions-8f16cfdef457.css\",\"site.css\":\"https://github.githubassets.com/assets/site-c93c61a95471.css\",\"home.css\":\"https://github.githubassets.com/assets/home-8b6943daec72.css\",\"home-campaign-update.css\":\"https://github.githubassets.com/assets/home-campaign-update-567c27afc6bb.css\",\"vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_delegated-events_di-94a48b.js\":\"https://github.githubassets.com/assets/vendors-node_modules_primer_behaviors_dist_esm_dimensions_js-node_modules_delegated-events_di-94a48b-689887fa5568.js\",\"vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js.js\":\"https://github.githubassets.com/assets/vendors-node_modules_virtualized-list_es_index_js-node_modules_github_template-parts_lib_index_js-878844713bc9.js\",\"vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_mini-throt-08ab15.js\":\"https://github.githubassets.com/assets/vendors-node_modules_github_filter-input-element_dist_index_js-node_modules_github_mini-throt-08ab15-5c0a626f08d8.js\",\"app_assets_modules_github_filter-input_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_filter-input_ts-f1c7e6963937.js\",\"app_assets_modules_github_ref-selector_ts.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_ref-selector_ts-3f80db3eb077.js\",\"app_assets_modules_github_onfocus_ts-app_assets_modules_github_settings_runner-groups_ts-app_-5e03dc.js\":\"https://github.githubassets.com/assets/app_assets_modules_github_onfocus_ts-app_assets_modules_github_settings_runner-groups_ts-app_-5e03dc-5b64da1dff25.js\",\"settings.js\":\"https://github.githubassets.com/assets/settings-7ecd006a441a.js\",\"signup.js\":\"https://github.githubassets.com/assets/signup-281ffa6765b7.js\"}"
+        }
+      ]
+    }
+  ]
+}

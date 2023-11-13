@@ -1,9 +1,13 @@
 {
-  "name": "asd",
+  "name": "github-e2e",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "e2e": "npx playwright test",
+    "smoke": "npx playwright test -g @smoke --headed",
+    "debug": "npx playwright test -g @smoke --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
