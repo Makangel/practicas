@@ -1,33 +1,35 @@
-import { defineConfig, devices } from '@playwright/test';
-require('dotenv').config();
+import { defineConfig, devices } from "@playwright/test";
+require("dotenv").config();
 
 export default defineConfig({
-  testDir: './tests',
+  testDir: "./tests",
+  timeout: 30000,
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: 'html',
+  reporter: "html",
   use: {
-  
-    trace: 'on-first-retry',
+    trace: "on-first-retry",
+    
   },
 
   projects: [
     {
-      name: "setup",
+      name: "loginSetup",
       testDir: "./tests/global-setup",
-      testMatch: "global-setup.ts"
+      testMatch: "global-setup.ts",
+      use:{
+        headless: true
+      }
     },
     {
-      name: 'chromium',
-      dependencies: ["setup"],
-      use: { ...devices['Desktop Chrome'],
-      storageState:'./tests/global-setup/storage-state.json',
+      name: "chromium",
+      dependencies: ["loginSetup"],
+      use: {
+        ...devices["Desktop Chrome"],
+        storageState: "./tests/global-setup/storage-state.json",
+      },
     },
-      
-    },
-
   ],
-
 });
