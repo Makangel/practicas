@@ -81,7 +81,8 @@ export class LandingPage {
     await this.page.waitForLoadState();
   }
 
-  async checkFilterAndScreenshot(filter: Locator) {//falta laguna espera? o configurar mejor el path?
+  async checkFilterAndScreenshot(filter: Locator) {
+    //falta laguna espera? o configurar mejor el path?
     await this.filtersButton.click();
     await filter.check();
     await this.saveFilterButton.click();
@@ -131,7 +132,7 @@ export class LandingPage {
   }
 
   async checkEveryFilter() {
-    for(let i=0;i<8;i++){
+    for (let i = 0; i < 8; i++) {
       await this.checkFilterAndScreenshot(this.aux[i]);
     }
   }
@@ -140,5 +141,23 @@ export class LandingPage {
     await this.profilePicLink.click();
     await this.gotoProfileButton.click();
     // await this.page.waitForLoadState();
+  }
+
+  async gotoFalseProfile() {
+    await this.page.route("https://github.com/Makangel", (route) =>
+      route.continue({
+        url: "https://www.google.com/",
+      })
+    );
+
+    await this.page.goto("https://github.com/Makangel");
+    await this.page.waitForLoadState();
+    await this.page.pause();
+  }
+
+  async gotoEmptyProfile() {
+    await this.page.goto("https://github.com/Makangel");
+    await this.page.route("**/*.{jpg,png,jpeg}", (route) => route.abort());
+    await this.page.route("**/*.css", (route) => route.abort());
   }
 }

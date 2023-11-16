@@ -38,33 +38,35 @@ pomTest(
     await landingPage.checkEveryFilter(); //revisar con hora este metodo
   }
 );
-//los metodos api no estarian funcionando, los hice como vi con rahul
+
 pomTest(
   "@smoke intercept an api call and mock the url",
   async ({ page, landingPage }) => {
     await landingPage.land();
-
-    
-    await page.route('"https://github.com/Makangel"', (route) =>
-      route.continue({
-        url: "https://www.google.com/",
-      })
-    );
-
-    await landingPage.gotoProfilePage();
-    await expect(page.url()).toMatch("https://www.google.com/");
+    await landingPage.gotoFalseProfile();
+    await page.screenshot({ path: "falseProfile.png" });
   }
 );
-pomTest(
-  "intercept an api call and abort it",
-  async ({ page, landingPage }) => {
-    await landingPage.land();
+pomTest("intercept an api call and abort it", async ({ page, landingPage }) => {
+  await landingPage.land();
 
-    await landingPage.gotoProfilePage();
-    await page.route('**/*.{jpg,png,jpeg}', route => route.abort());
-    await page.route('**/*.css', route => route.abort());
-    
-    await page.screenshot({path:'nonCssJpgProfile.png'})
+  await landingPage.gotoEmptyProfile();
 
-  }
-);
+  await page.screenshot({ path: "nonCssJpgProfile.png" });
+});
+
+pomTest(" test", async ({ page, landingPage }) => {
+  // await page.route("https://www.google.com/", (route) =>
+  //   route.continue({
+  //     url: "https://www.youtube.com/",
+  //   })
+  // );
+  await landingPage.land();
+  await landingPage.gotoProfilePage();//la unica diferencia es llegar al perfil x este metodo
+  await page.route("**/*.{jpg,png,jpeg}", (route) => route.abort());
+  await page.route("**/*.css", (route) => route.abort());
+
+  await page.goto("https://www.google.com/");
+  await page.waitForLoadState();
+  await page.pause();
+});
