@@ -7,11 +7,14 @@ export class ProfilePage {
   constructor(page) {
     this.page = page;
     this.repoContainer = this.page.locator(
-      'li[class="mb-3 d-flex flex-content-stretch col-12 col-md-6 col-lg-6"]'
+      'ol li[class="mb-3 d-flex flex-content-stretch col-12 col-md-6 col-lg-6"]'
     );
   }
 
-  async getAndPrintRepositories() {//ver con hora por que pasa el test pero no imprime el array con el texto del locator. con debug no se ve que pase al metodo
+  async getAndPrintRepositories() {
+    //ver con hora por que pasa el test pero no imprime el array con el texto del locator. con debug no se ve que pase al metodo
+    // await this.page.pause();
+    await this.page.waitForSelector('ol li[class="mb-3 d-flex flex-content-stretch col-12 col-md-6 col-lg-6"]');
     const count: number = await this.repoContainer.count();
     const aux: Array<string> = [];
 

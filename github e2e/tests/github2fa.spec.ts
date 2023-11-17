@@ -15,8 +15,8 @@ pomTest(
   "uncheck all filters and take a screenshot of dashboard",
   async ({ page, landingPage }) => {
     await landingPage.land();
-    await landingPage.uncheckAllFilters(); //revisar con hora este metodo
-    await page.screenshot({ path: "dashboard.png" });
+    await landingPage.uncheckAllFilters(); //era el uncheck()
+    await page.screenshot({ path: "noFilterDashboard.png" });
   }
 );
 
@@ -25,22 +25,21 @@ pomTest(
   async ({ page, landingPage, profilePage }) => {
     await landingPage.land();
     await landingPage.gotoProfilePage();
-    await profilePage.getAndPrintRepositories(); //revisar con hora este metodo
-    await page.pause();
+    await page.waitForLoadState();
+    await profilePage.getAndPrintRepositories(); //era la espera de que se cargue la pagina
   }
 );
 
 pomTest(
-  "check filter and take a screenshot per every filter",
+  "@smoke check filter and take a screenshot per every filter",
   async ({ landingPage }) => {
     await landingPage.land();
     await landingPage.uncheckAllFilters();
-    await landingPage.checkEveryFilter(); //revisar con hora este metodo
+    await landingPage.checkEveryFilter(); //era el uncheck y la espera
   }
 );
-
-pomTest(
-  "@smoke intercept an api call and mock the url",
+//get post put
+pomTest(  "intercept an api call and mock the url",
   async ({ page, landingPage }) => {
     await landingPage.land();
     await landingPage.gotoFalseProfile();
@@ -62,7 +61,7 @@ pomTest(" test", async ({ page, landingPage }) => {
   //   })
   // );
   await landingPage.land();
-  await landingPage.gotoProfilePage();//la unica diferencia es llegar al perfil x este metodo
+  await landingPage.gotoProfilePage(); //la unica diferencia es llegar al perfil x este metodo
   await page.route("**/*.{jpg,png,jpeg}", (route) => route.abort());
   await page.route("**/*.css", (route) => route.abort());
 

@@ -16,6 +16,7 @@ export class LandingPage {
   readonly saveFilterButton: Locator;
   readonly profilePicLink: Locator;
   readonly gotoProfileButton: Locator;
+  readonly oneFilterButton: Locator;
 
   protected aux: Array<Locator>;
 
@@ -26,7 +27,7 @@ export class LandingPage {
       name: "Makangel/practicas",
     });
 
-    this.filtersButton = this.page.getByRole("button", { name: "Filter" });
+    this.filtersButton = this.page.getByRole("button", { name: "Filter", exact: true });
     this.announcementFilterCheck = this.page.locator(
       'input[name="Announcements"]'
     );
@@ -48,6 +49,7 @@ export class LandingPage {
     this.gotoProfileButton = this.page.getByRole("link", {
       name: "Your profile",
     });
+    this.oneFilterButton = this.page.getByRole('button', { name: 'Filter 1' });
 
     this.aux = [
       this.announcementFilterCheck,
@@ -74,11 +76,11 @@ export class LandingPage {
     for (let i = 0; i < 8; i++) {
       //revisar con hora porque no entra en la condicion
       if ((await this.aux[i].isChecked()) === true) {
-        await this.aux[i].check();
+        await this.aux[i].uncheck();
       }
     }
     await this.saveFilterButton.click();
-    await this.page.waitForLoadState();
+    await this.page.waitForLoadState('networkidle');
   }
 
   async checkFilterAndScreenshot(filter: Locator) {
@@ -86,9 +88,10 @@ export class LandingPage {
     await this.filtersButton.click();
     await filter.check();
     await this.saveFilterButton.click();
+    await this.page.waitForLoadState('networkidle');
     await this.page.screenshot();
-    await this.filtersButton.click();
-    await filter.check();
+    await this.oneFilterButton.click();
+    await filter.uncheck();
     await this.saveFilterButton.click();
   }
 
@@ -140,7 +143,7 @@ export class LandingPage {
   async gotoProfilePage() {
     await this.profilePicLink.click();
     await this.gotoProfileButton.click();
-    // await this.page.waitForLoadState();
+    await this.page.waitForLoadState();
   }
 
   async gotoFalseProfile() {
