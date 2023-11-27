@@ -1,9 +1,9 @@
 import { test, expect } from '@playwright/test';
 const request = require('supertest');
 const assert = require('assert');
-const booking = require('../test-data/booking.json');
-const updatedBooking = require('../test-data/updateBooking.json');
-const credentials = require('../test-data/login.json');
+const booking = require('../test-data/dogBooker/booking.json');
+const updatedBooking = require('../test-data/dogBooker/updateBooking.json');
+const credentials = require('../test-data/dogBooker/login.json');
 const baseurl = 'https://restful-booker.herokuapp.com';
 let bookingId;
 let token;

@@ -1,0 +1,14 @@
+{
+    "user": {
+        "name": "morpheus",
+        "job": "leader"
+    },
+    "updatedUser": {
+        "name": "morpheus",
+        "job": "zion resident"
+    },
+    "registerUser": {
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    }
+}
