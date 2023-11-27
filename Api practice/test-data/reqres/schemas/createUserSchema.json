@@ -1,0 +1,118 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "data",
+        "support"
+    ],
+    "properties": {
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "id",
+                "name",
+                "year",
+                "color",
+                "pantone_value"
+            ],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The id Schema",
+                    "examples": [
+                        2
+                    ]
+                },
+                "name": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The name Schema",
+                    "examples": [
+                        "fuchsia rose"
+                    ]
+                },
+                "year": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The year Schema",
+                    "examples": [
+                        2001
+                    ]
+                },
+                "color": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The color Schema",
+                    "examples": [
+                        "#C74375"
+                    ]
+                },
+                "pantone_value": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The pantone_value Schema",
+                    "examples": [
+                        "17-2031"
+                    ]
+                }
+            },
+            "examples": [{
+                "id": 2,
+                "name": "fuchsia rose",
+                "year": 2001,
+                "color": "#C74375",
+                "pantone_value": "17-2031"
+            }]
+        },
+        "support": {
+            "type": "object",
+            "default": {},
+            "title": "The support Schema",
+            "required": [
+                "url",
+                "text"
+            ],
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The url Schema",
+                    "examples": [
+                        "https://reqres.in/#support-heading"
+                    ]
+                },
+                "text": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The text Schema",
+                    "examples": [
+                        "To keep ReqRes free, contributions towards server costs are appreciated!"
+                    ]
+                }
+            },
+            "examples": [{
+                "url": "https://reqres.in/#support-heading",
+                "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+            }]
+        }
+    },
+    "examples": [{
+        "data": {
+            "id": 2,
+            "name": "fuchsia rose",
+            "year": 2001,
+            "color": "#C74375",
+            "pantone_value": "17-2031"
+        },
+        "support": {
+            "url": "https://reqres.in/#support-heading",
+            "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+        }
+    }]
+}

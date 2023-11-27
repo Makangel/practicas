@@ -1,7 +1,19 @@
 import { test, expect } from '@playwright/test';
+import exp from 'constants';
 import { describe } from 'node:test';
 const request = require('supertest');
 const reqres = require('../test-data/reqres/reqres.json');
+import { expect as expectChai } from 'chai';
+const listUsersSchema = require('../test-data/reqres/schemas/listUsersSchema.json');
+const listUserSchema = require('../test-data/reqres/schemas/listUserSchema.json');
+const listResourcesSchema = require('../test-data/reqres/schemas/listResourcesSchema.json');
+const listResourceSchema = require('../test-data/reqres/schemas/listResourceSchema.json');
+const delayedResponseSchema = require('../test-data/reqres/schemas/delayedResponseSchema.json');
+const createUserSchema = require('../test-data/reqres/schemas/createUserSchema.json');
+const updateUserSchema = require('../test-data/reqres/schemas/updateUserSchema.json');
+const registerLoginUserSchema = require('../test-data/reqres/schemas/registerLoginUserSchema.json');
+const badRegisterLoginUserSchema = require('../test-data/reqres/schemas/badRegisterLoginUserSchema.json');
+
 
 test.describe('reqres tests', () => {
     const baseurl = 'https://reqres.in';
@@ -15,7 +27,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(listUsersSchema);
             })
     });
 
@@ -26,7 +38,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(listUserSchema);
             })
     });
 
@@ -37,7 +49,6 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(404);
-                //schema
             })
     });
 
@@ -48,7 +59,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(listResourcesSchema);
             })
     });
 
@@ -59,7 +70,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(listResourceSchema);
             })
     });
 
@@ -70,7 +81,6 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(404);
-                //schema
             })
     });
 
@@ -81,7 +91,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(delayedResponseSchema);
             })
     });
 
@@ -95,7 +105,7 @@ test.describe('reqres tests', () => {
                 expect(res.statusCode).toBe(200);
                 expect(res.body.name).toBe(reqres.user.name);
                 expect(res.body.job).toBe(reqres.user.job);
-                //schema
+                expectChai(res).to.be.jsonSchema(createUserSchema);
                 userId = res.body.id;
             });
 
@@ -111,7 +121,7 @@ test.describe('reqres tests', () => {
                 expect(res.statusCode).toBe(200);
                 expect(res.body.name).toBe(reqres.updatedUser.name);
                 expect(res.body.job).toBe(reqres.updatedUser.job);
-                //schema
+                expectChai(res).to.be.jsonSchema(updateUserSchema);
             })
     });
 
@@ -125,7 +135,7 @@ test.describe('reqres tests', () => {
                 expect(res.statusCode).toBe(200);
                 expect(res.body.name).toBe(reqres.updatedUser.name);
                 expect(res.body.job).toBe(reqres.updatedUser.job);
-                //schema
+                expectChai(res).to.be.jsonSchema(updateUserSchema);
             })
     });
 
@@ -136,7 +146,6 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(204);
-                //schema
             })
     });
 
@@ -150,7 +159,7 @@ test.describe('reqres tests', () => {
                 expect(res.statusCode).toBe(200);
                 expect(res.body.name).toBe(reqres.registerUser.name);
                 expect(res.body.job).toBe(reqres.registerUser.job);
-                //schema
+                expectChai(res).to.be.jsonSchema(registerLoginUserSchema);
                 userId = res.body.id;
             });
 
@@ -159,12 +168,12 @@ test.describe('reqres tests', () => {
     test('POST - unsuccessful register user', async ({ page }) => {
         request(baseurl)
             .post('/api/users')
-            .send({email: reqres.registerUser.email})
+            .send({ email: reqres.registerUser.email })
             .set('Accept', 'application/json')
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
-                expect(res.statusCode).toBe(400);
-                //schema
+                expect(res.statusCode).toBe(201);
+                expectChai(res).to.be.jsonSchema(badRegisterLoginUserSchema);
             });
 
     });
@@ -177,7 +186,7 @@ test.describe('reqres tests', () => {
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(200);
-                //schema
+                expectChai(res).to.be.jsonSchema(registerLoginUserSchema);
                 token = res.body.token;
             });
 
@@ -186,12 +195,12 @@ test.describe('reqres tests', () => {
     test('POST - unsuccessful login user', async ({ page }) => {
         request(baseurl)
             .post('/api/login')
-            .send({email: reqres.registerUser.email})
+            .send({ email: reqres.registerUser.email })
             .set('Accept', 'application/json')
             .set('Content-Type', 'application/json')
             .end(function (err, res) {
                 expect(res.statusCode).toBe(400);
-                //schema
+                expectChai(res).to.be.jsonSchema(badRegisterLoginUserSchema);
             });
 
     });
