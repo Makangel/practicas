@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "OTZ",
+      "value": "7319150_68_68__68_",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1704045018,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "COMPASS",
+      "value": "gmail=CsMBAAlriVegnDA9Yj2gVlKNKzoZSx5KPxJJ_xU0_L8PHjKsWOLS5Mg1U1DOnGb8BduD3nKN40rnEuxsquqQ4OfOE387IjGtvqJAEJVaP0fcCtFpoOEGAdzCV6x7GJ7WnRlrXoG9mLy5ZkiS6uErhrdUP3GHbXRPdyV09kV6Stw_L_M2Hr6Iy2ILNCccyjyPmZSyrioNTEnMTonUIQTwahDAzn7x5ltw5TQ4IYgexKTilKXpvdOv6alREzQWK74SNF9EC6-uEIrWqKsGGuoBAAlriVcJ8qTRhenOJQa32QU0nA51BqJLXrghPg8gLOjIsVxWCBXfokwvSWHfecb43sL5YqR8euycNWhgiNtu1cvrNLR88YstccgJIAJnRLBzyNgKyZ06lcX8YO0DzmTjL_5TYb3YmGC1TA0w3iLkHcqzoCUz0Czq33FJ8DVPJjBookgnI6Hr4payZKJg1_tIHuhiwmS-Bu4NRLZlSg9XeAGQT0eiUeWDQYcnB_OA1Y0utbXEr-q_rwgMoLorZWTUZT9NuT7VrQZf_xx90AoiKsB05QicEnYilmGMbblAP7982fsEWHtKph08MAE",
+      "domain": "mail.google.com",
+      "path": "/mail",
+      "expires": 1702317048,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__Host-GAPS",
+      "value": "1:8emAywpYUnbQVC8JTuOJoa2mV8MOeg:49NNkUg7Fjt3P2H7",
+      "domain": "accounts.google.com",
+      "path": "/",
+      "expires": 1764525049,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    }
+  ],
+  "origins": []
+}
