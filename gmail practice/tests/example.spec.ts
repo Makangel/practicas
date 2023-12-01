@@ -60,7 +60,7 @@ test.describe('api', async () => {
 test.describe('ui', async () => {
 
 
-    pomTest('login?',async({page,loginPage})=>{
+    pomTest('@smoke login?',async({page,loginPage})=>{
 
         await loginPage.login();
         await page.goto('https://gmail.com');

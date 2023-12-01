@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "debug": "npx playwright test -g @smoke --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
