@@ -19,7 +19,7 @@ export class LoginPage {
         this.emailInput = this.page.getByLabel('Email or phone');
         this.nextButton = this.page.getByRole('button', { name: 'Next' });
         this.passwordInput = this.page.getByLabel('Enter your password');
-        this.totpInput = this.page.getByLabel('Enter your password');
+        this.totpInput = this.page.getByLabel('Enter code');
         this.totpNextButton = this.page.locator('#totpNext').getByRole('button', { name: 'Next' });
     };
 
@@ -29,12 +29,12 @@ export class LoginPage {
         await this.logInButton.click();
         await this.emailInput.fill(process.env.EMAIL!);
         await this.nextButton.click();
-        await this.page.waitForLoadState('networkidle');
+        await this.page.waitForSelector('input[type="password"]');
         await this.passwordInput.fill(process.env.password!);
         await this.nextButton.click();
-        await this.page.waitForLoadState('networkidle');
+        await this.page.waitForSelector('input[type="tel"]');
         await this.totpInput.fill(this.otp);
-        await this.totpNextButton.click();
+        await this.nextButton.click();
 
         await this.page.waitForLoadState('networkidle');
         await this.page.context().storageState({ path: "../storage-state.json" });
