@@ -60,11 +60,18 @@ test.describe('api', async () => {
 test.describe('ui', async () => {
 
 
-    pomTest('@smoke login?',async({page,loginPage})=>{
+    pomTest('login?',async({page,loginPage})=>{
 
         await loginPage.login();
         await page.goto('https://gmail.com');
-        await page.pause();
     });
+
+    pomTest('@smoke add tag to a starred email',async({page,loginPage, landingPage})=>{
+        await loginPage.login();
+        await landingPage.tagAFavMail();    
+        await expect(page.locator('div[class="av"]')).toContainText('API');
+        await page.pause();
+
+    })
 
 });

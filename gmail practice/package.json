@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "smoke":"npx playwright test -g @smoke",
     "debug": "npx playwright test -g @smoke --debug"
   },
   "keywords": [],
